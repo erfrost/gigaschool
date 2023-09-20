@@ -35,7 +35,7 @@ body {
     font-weight: 600;
     letter-spacing: 3px;
     color: white;
-    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(122, 6, 255), 0 0 30px rgb(122, 6, 255), 0 0 40px rgb(122, 6, 255), 0 0 55px rgb(122, 6, 255), 0 0 75px rgb(122, 6, 255), 0px 0px 19px rgb(122, 6, 255);
+    text-shadow: 0 0 0 #FFF, 0 0 10px #FFF, 0 0 10px #FFF, 0 0 15px rgb(122, 6, 255), 0 0 25px rgb(122, 6, 255), 0 0 35px rgb(122, 6, 255), 0 0 50px rgb(122, 6, 255), 0 0 70px rgb(122, 6, 255), 0px 0px 14px rgb(122, 6, 255);
 }
 .lineVertical {
     width: 8px;
