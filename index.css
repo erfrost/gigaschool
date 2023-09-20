@@ -1,0 +1,162 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #202124;
+    overflow: hidden;
+    font-family: 'Montserrat';
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes showContent {
+    0% {
+        transform: translateY(-300%);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+    }
+}
+.container {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: showContent 0.7s cubic-bezier(0.260, 0.510, 0.010, 0.995);
+    transition: all 0.3s ease;
+}
+.myName {
+    font-size: 58px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: white;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(122, 6, 255), 0 0 30px rgb(122, 6, 255), 0 0 40px rgb(122, 6, 255), 0 0 55px rgb(122, 6, 255), 0 0 75px rgb(122, 6, 255), 0px 0px 19px rgb(122, 6, 255);
+}
+.lineVertical {
+    width: 8px;
+    height: 150px;
+    background: linear-gradient(to bottom, rgb(168 92 255), rgb(216, 216, 216));
+    border-radius: 8px 8px 0 0;
+}
+.lineHorizontal {
+    width: 100%;
+    height: 8px;
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px 8px 0 0;
+}
+.linesGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.linesGroup .lineVertical {
+    border-radius: 0;
+    background: rgb(240, 240, 240);
+}
+.infoGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.card {
+    background-color: rgb(240, 240, 240);
+    border-radius: 8px;
+    padding: 25px;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    white-space: break-spaces;
+    font-size: 22px;
+    box-shadow: 0px 0px 300px 0px rgb(122, 6, 255);
+}
+.card:first-child {
+    transform: translateX(-50%);
+}
+.card:last-child {
+    transform: translateX(50%);
+}
+.btn {
+    padding: 15px 35px;
+    background-color: #202124;
+    border-radius: 12px;
+    border: 2px solid rgb(122, 6, 255);
+    margin-top: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    animation: showBtn 0.3s ease 0.7s;
+}
+.btnText {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+.btn:hover {
+    scale: 1.1;
+}
+.arrow {
+    margin: 40px auto 10px auto;
+    width: 38px;
+    height: 100px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid rgb(122, 6, 255);
+    border-right: 5px solid rgb(122, 6, 255);
+    transform: rotate(45deg);
+    margin: -20px 0;
+    animation: arrow 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes arrow {
+    0%{
+        opacity: 0;
+        transform: translate(0,-20px) rotate(45deg);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0,20px) rotate(45deg);
+    }
+}
+.showArrow {
+    opacity: 1;
+}
+
+.container-2 {
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    opacity: 0;
+    transform: translateX(300%);
+    transition: all 0.7s cubic-bezier(0.260, 0.510, 0.010, 0.995);
+}
+.image {
+    width: 65%;
+    transform: translateY(7%);
+}
